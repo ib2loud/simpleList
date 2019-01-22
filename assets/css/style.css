@@ -1,0 +1,85 @@
+body,
+html {
+    font-family: 'Indie Flower', cursive;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding: 10px 10px 0 10px;
+}
+
+#mainBox {
+    width: 100%;
+    padding: 0;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    /* make scrollbar transparent */
+}
+
+.fa-plus {
+    cursor: pointer;
+    float: right;
+}
+
+input {
+    padding-left: 10px;
+    width: 100%;
+    display: none;
+    font-size: 2rem;
+}
+
+#topBar {
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    background-color: #0084AB;
+    margin: 0;
+    color: white;
+}
+
+ul {
+    font-size: 1.25rem;
+    padding: 0;
+}
+
+li {
+    font-size: 1.25rem;
+    padding: 0;
+    list-style-type: none;
+    transition: padding .25s;
+}
+
+li:nth-of-type(even) {
+    background-color: #ACD0DB;
+}
+
+.markedOut {
+    text-decoration: line-through;
+    color: #c0c0c0;
+}
+
+span {
+    height: 1.9rem;
+    color: white;
+    background-color: rgb(193, 20, 20);
+    padding: 0 5px 0 10px;
+    border: 1px solid black;
+    left: -100px;
+    position: absolute;
+    transition: left .25s;
+
+}
+
+li:hover span { 
+ left: 0px;
+}
+
+li:hover {
+    padding-left: 35px;
+    transition: padding .25s;
+}
