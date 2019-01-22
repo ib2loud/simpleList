@@ -96,6 +96,6 @@ li:hover span {
 }
 
 li:hover {
-    padding-left: 35px;
+    padding-left: 40px;
     transition: padding .25s;
 }
