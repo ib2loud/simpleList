@@ -22,6 +22,7 @@ h1 {
 
 #mainBox {
     width: 100%;
+    max-height: 100vh;
     padding: 0;
     overflow: scroll;
 }
@@ -40,15 +41,19 @@ h1 {
 
 .fa-trash-alt {
     cursor: pointer;
-    height: 30px;
-    padding-bottom: 5px;
+    height: 25px;
+}
+
+.fa-check {
+    cursor: pointer;
+    height: 25px;
 }
 
 input {
     padding-left: 10px;
     width: 100%;
     display: none;
-    font-size: 2.25rem;
+    font-size: 2rem;
 }
 
 #topBar {
@@ -64,7 +69,7 @@ ul {
 }
 
 li {
-    font-size: 2rem;
+    line-height: 32px;
     padding: 0;
     list-style-type: none;
     transition: padding .25s;
@@ -79,16 +84,23 @@ li:nth-of-type(even) {
     color: #c0c0c0;
 }
 
-span {
-    line-height: 2.9rem;
+span.fullSpan {
     color: white;
-    background-color: rgb(193, 20, 20);
-    padding: 0 5px 0 15px;
-    border: 1px solid black;
     left: -100px;
     position: absolute;
     transition: left .25s;
+}
 
+span.trashCan {
+    background-color: rgb(193, 20, 20);
+    border: 1px solid black;
+    padding: 0 5px;
+}
+
+span.checkMark {
+    background-color: rgb(0, 131, 61);
+    border: 1px solid black;
+    padding: 0 5px;
 }
 
 li:hover span {
@@ -96,6 +108,5 @@ li:hover span {
 }
 
 li:hover {
-    padding-left: 40px;
-    transition: padding .25s;
+    padding-left: 70px;
 }

@@ -19,7 +19,7 @@ function barDrop() {
 function pushItems() {
     $("#newItem").keypress(function (e) {
         if (e.which === 13 && $(this).val() !== "") {
-            $("ul").append(`<li class="border-bottom border-dark"><span class="border-dark border-left-0"><img class="fa-trash-alt align-middle" src="images/trash.png"></span>&nbsp${$(this).val()}&nbsp</li>`);
+            $("ul").append(`<li class="border-bottom border-dark"><span class="border-dark border-left-0 fullSpan"><span class="trashCan border-dark border-left-0"><img class="fa-trash-alt" src="images/trash.png"></span><span class="border-dark border-left-0 checkMark"><img class="fa-check" src="images/check.png"></span></span>&nbsp${$(this).val()}&nbsp</li>`);
             $(this).val("");
         }
     });
@@ -30,16 +30,16 @@ function pushItems() {
 function watchClicks() {
 
     //Delete on trash click
-    $("ul").on("click", "span", function (e) {
-        $(this).parent().fadeOut(500, function () {
+    $("ul").on("click", "span.trashCan", function (e) {
+        $(this).closest("li").fadeOut(500, function () {
             $(this).remove();
         });
         e.stopPropagation();
     });
 
     //Strike through on li click
-    $("ul").on("click", "li", function () {
-        $(this).toggleClass("markedOut");
+    $("ul").on("click", "span.checkMark", function () {
+        $(this).closest("li").toggleClass("markedOut");
     });
     return;
 }
