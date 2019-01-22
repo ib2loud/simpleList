@@ -26,7 +26,7 @@ function pushItems() {
     return;
 }
 
-//Watch for clicks on lis and trash cans
+//Watch for clicks on check mark and trash cans
 function watchClicks() {
 
     //Delete on trash click
@@ -37,7 +37,7 @@ function watchClicks() {
         e.stopPropagation();
     });
 
-    //Strike through on li click
+    //Strike through on checkMark click
     $("ul").on("click", "span.checkMark", function () {
         $(this).closest("li").toggleClass("markedOut");
     });
