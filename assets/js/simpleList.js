@@ -19,7 +19,7 @@ function barDrop() {
 function pushItems() {
     $("#newItem").keypress(function (e) {
         if (e.which === 13 && $(this).val() !== "") {
-            $("ul").append(`<li class="border-bottom border-dark"><span class="border-dark border-left-0"><i class="fas fa-trash-alt align-middle"></i></span>&nbsp${$(this).val()}&nbsp</li>`);
+            $("ul").append(`<li class="border-bottom border-dark"><span class="border-dark border-left-0"><img class="fa-trash-alt align-middle" src="images/trash.png"></span>&nbsp${$(this).val()}&nbsp</li>`);
             $(this).val("");
         }
     });

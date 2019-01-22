@@ -25,6 +25,11 @@ h1 {
 .fa-plus {
     cursor: pointer;
     float: right;
+    height: 40px;
+}
+.fa-trash-alt {
+    cursor: pointer;
+    height: 40px;
 }
 
 input {
