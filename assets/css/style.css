@@ -1,6 +1,16 @@
+@font-face {
+    font-family: FjallaOne;
+    src: url("FjallaOne.ttf");
+}
+
+@font-face {
+    font-family: IndieFlower;
+    src: url("IndieFlower.ttf");
+}
+
 body,
 html {
-    font-family: 'Indie Flower', cursive;
+    font-family: "IndieFlower", cursive;
     margin: 0 auto;
     padding: 0;
 }
@@ -27,9 +37,10 @@ h1 {
     float: right;
     height: 40px;
 }
+
 .fa-trash-alt {
     cursor: pointer;
-    height: 20px;
+    height: 30px;
     padding-bottom: 5px;
 }
 
@@ -37,11 +48,11 @@ input {
     padding-left: 10px;
     width: 100%;
     display: none;
-    font-size: 2rem;
+    font-size: 2.25rem;
 }
 
 #topBar {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: "FjallaOne", sans-serif;
     text-transform: uppercase;
     background-color: #0084AB;
     margin: 0;
@@ -49,12 +60,11 @@ input {
 }
 
 ul {
-    font-size: 1.25rem;
     padding: 0;
 }
 
 li {
-    font-size: 1.25rem;
+    font-size: 2rem;
     padding: 0;
     list-style-type: none;
     transition: padding .25s;
@@ -70,7 +80,7 @@ li:nth-of-type(even) {
 }
 
 span {
-    height: 1.9rem;
+
     color: white;
     background-color: rgb(193, 20, 20);
     padding: 0 5px 0 5px;
@@ -81,8 +91,8 @@ span {
 
 }
 
-li:hover span { 
- left: 0px;
+li:hover span {
+    left: 0px;
 }
 
 li:hover {
